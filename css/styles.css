@@ -547,10 +547,6 @@ SPACING-SYSTEM (px)
     margin-bottom: 64px;
   }
 
-  .hero a {
-    margin-top: 24px;
-  }
-
   .hero-text h1 {
     font-size: 1.5rem;
     margin-bottom: 24px;
@@ -562,6 +558,15 @@ SPACING-SYSTEM (px)
 
   .hero-image {
     width: 100%;
+    text-align: center;
+  }
+
+  .btn-hero {
+    width: 170px;
+  }
+
+  .hero a {
+    margin-top: 24px;
     text-align: center;
   }
 
