@@ -590,7 +590,11 @@ SPACING-SYSTEM (px)
   .card-item {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 48px;
+    gap: 24px;
+  }
+
+  .card-details {
+    margin: 24px;
   }
 
   /* Mission */
@@ -837,6 +841,7 @@ SPACING-SYSTEM (px)
     justify-content: center;
     gap: 24px;
     padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .footer-logo-box {
