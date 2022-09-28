@@ -604,11 +604,11 @@ SPACING-SYSTEM (px)
 
   .mission-image img {
     width: 100%;
+    margin-bottom: 24px;
   }
 
   .mission-text {
     width: 100%;
-    margin-top: 18px;
   }
 
   .mission-text h1 {
