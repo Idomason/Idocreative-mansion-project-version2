@@ -590,10 +590,7 @@ SPACING-SYSTEM (px)
   .card-item {
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .card-details {
-    gap: 48px;
+    gap: 24px;
   }
 
   /* Mission */
