@@ -620,7 +620,7 @@ SPACING-SYSTEM (px)
   }
 
   .video {
-    gap: 10px;
+    margin-top: 24px;
   }
 
   /* Counter */
@@ -676,6 +676,7 @@ SPACING-SYSTEM (px)
 
   .banner-image {
     padding: 0;
+    margin-top: 24px;
   }
 
   .banner-image img {
@@ -711,7 +712,7 @@ SPACING-SYSTEM (px)
 
   .projects {
     margin-top: 32px;
-    gap: 24px;
+    margin-bottom: 24px;
   }
 
   .btn-project {
@@ -772,7 +773,7 @@ SPACING-SYSTEM (px)
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 48px;
+    padding-bottom: 48px;
     text-align: center;
     padding: 20px;
   }
