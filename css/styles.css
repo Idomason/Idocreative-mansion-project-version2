@@ -21,6 +21,12 @@ SPACING-SYSTEM (px)
   box-sizing: border-box;
 }
 
+html {
+  /* font size: 16px by default */
+  /* 10px / 16px = 6.25 * 100 = 62.5% */
+  font-size: 62.5%;
+}
+
 body {
   background: url('/images/background.png');
   background-size: cover;
@@ -44,19 +50,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  gap: 4.8rem;
+  padding: 2rem;
 }
 
 .logo img {
-  width: 70%;
-  border-radius: 250%;
+  width: 100%;
 }
 
 .nav-items {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 4.8rem;
   list-style: none;
 }
 
@@ -65,33 +71,53 @@ body {
   text-decoration: none;
   /* color: #343a40; */
   color: #11294d;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .nav-link:hover,
 .nav-link:active {
   color: #f76707;
-  font-size: 1.2rem;
-  font-weight: 500;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.phone-icon {
+  font-size: 3.2rem;
+  color: #f76707;
+}
+
+.phone-number {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .nav-icons {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 3rem;
 }
 
 .nav-icon {
   stroke: #f76707;
-  width: 32px;
-  height: 32px;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 .hamburger {
-  display: inline-block;
+  width: 4.8rem;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f76707;
   border-radius: 50%;
-  padding: 10px;
+  cursor: pointer;
 }
 
 .hamburger .nav-icon {
@@ -110,42 +136,48 @@ SPACING-SYSTEM (px)
                         MAIN
 ====================================================*/
 
+/* -Font Sizes (px):  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* -Spacing System (px):  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
 .main {
-  width: 90%;
+  width: 120rem;
   margin: auto;
-  margin-top: 128px;
+  margin-top: 2.4rem;
 }
 
 .hero {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: space-between;
-  gap: 52px;
-  margin-bottom: 128px;
-}
-
-.hero-text {
-  align-self: flex-start;
+  gap: 4.8rem;
+  max-width: 130rem;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero-text h1 {
-  font-size: 2.25rem;
+  font-size: 5.2rem;
   line-height: 1.2;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 
 .hero-text p {
-  font-size: 1.25rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
-.hero-image img {
-  border-radius: 12px;
+.hero-image {
+  width: 100%;
+  text-align: right;
 }
 
-.hero a {
+.hero-image img {
+  width: 80%;
+}
+
+.btn-hero {
   display: inline-block;
-  margin-top: 48px;
+  margin-top: 4.8rem;
 }
 
 .btn:link,
@@ -158,24 +190,16 @@ SPACING-SYSTEM (px)
 
 .btn:hover,
 .btn:active {
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
   font-weight: 600;
 }
 
 .btn-primary {
-  font-size: 1.125rem;
-  padding: 12px 23px;
-  align-self: flex-end;
-}
-
-.btn-hero {
-  width: 55%;
-  margin: auto;
-  margin-top: auto;
-  margin-top: 24px;
-  font-size: 0.75rem;
-  font-weight: 600;
+  padding: 1.6rem 4rem;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 500;
 }
 
 /* ==================================================
@@ -184,23 +208,24 @@ SPACING-SYSTEM (px)
 
 .card {
   width: 100%;
-  margin-bottom: 128px;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .card h1 {
-  font-size: 1.875rem;
-  margin-bottom: 48px;
+  font-size: 3.2rem;
+  margin-bottom: 4.8rem;
 }
 
 .card-icon {
-  stroke: #f76707;
-  width: 50px;
-  height: 50px;
+  color: #f76707;
+  width: 5rem;
+  height: 5rem;
 }
 
 .card-item {
   display: flex;
-  gap: 24px;
+  justify-content: center;
+  gap: 4.8rem;
 }
 
 .card-details span {
@@ -208,26 +233,27 @@ SPACING-SYSTEM (px)
 }
 
 .card-details {
-  padding: 20px;
-  border: 2px solid #f76707;
+  padding: 2.4rem;
   text-align: center;
   border: 1px solid #eaeaea;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 0.8rem 2.4rem;
   border-radius: 20px;
-  width: 250px;
-  height: 350px;
+  width: 30rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-details h3 {
-  padding: 16px 0;
-  font-size: 0.875rem;
+  padding: 1.6rem 0;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
 .card-details p {
   text-align: left;
-  font-size: 0.75rem;
+  font-size: 1.4rem;
   line-height: 2;
 }
 
@@ -238,50 +264,49 @@ SPACING-SYSTEM (px)
 }
 
 .number {
-  margin-top: 48px;
+  /* margin-top: 48px; */
+  font-size: 1.4rem;
 }
 
 /* =================================================
                       MISSION
 ==================================================*/
 .mission {
-  /* width: 85%; */
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
-  margin: auto;
-  margin-bottom: 128px;
+  gap: 6.4rem;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .mission-image img {
-  border-radius: 12px;
+  width: 100%;
 }
 
 .mission-text {
-  width: 50%;
-  align-self: flex-start;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 2.4rem;
 }
 
 .mission-text h1 {
-  font-size: 1.875rem;
+  font-size: 3.2rem;
   line-height: 1.2;
 }
 
 .mission-text .mission-text-medium {
-  font-size: 1.125rem;
+  font-size: 1.8rem;
 }
 
 .mission-text-small {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .video-icon {
   stroke: #f76707;
-  width: 40px;
+  width: 4.8rem;
 }
 
 .video {
@@ -292,6 +317,7 @@ SPACING-SYSTEM (px)
 
 .video span {
   text-transform: uppercase;
+  font-size: 1.6rem;
 }
 
 /* ===========================================
@@ -300,14 +326,15 @@ SPACING-SYSTEM (px)
 .counter {
   width: 100%;
   display: flex;
-  margin-bottom: 128px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .counter-icon {
@@ -316,148 +343,289 @@ SPACING-SYSTEM (px)
 }
 
 .num {
-  font-size: 52px;
+  font-size: 5.2rem;
   font-weight: 700;
   color: #11294d;
 }
 
 .text {
   text-transform: uppercase;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
 /* Banner */
 
 .banner {
-  /* width: 100%; */
-  /* height: 80%; */
   display: flex;
-  margin-bottom: 128px;
-  align-items: center;
+  /* padding: 4.8rem 0 9.6rem 0; */
   justify-content: space-between;
-  gap: 30px;
+  gap: 3.2rem;
   color: #fff;
   background-color: #11294d;
   border-radius: 12px;
-  padding: 30px;
+  padding: 3.2rem;
+  margin: 4.8rem 0 9.6rem 0;
 }
 
 .banner-text {
-  align-self: center;
-  padding-left: 32px;
+  padding-left: 3.2rem;
 }
 
 .banner-text h2 {
-  font-size: 1.875rem;
-  margin-bottom: 32px;
+  font-size: 4.4rem;
+  margin-bottom: 3.2rem;
 }
 
 .banner-image {
-  padding-right: 32px;
-}
-
-.banner-image img {
-  display: block;
-  max-width: 840px;
-  max-height: 250px;
-  width: auto;
-  height: auto;
-  border-radius: 12px;
+  padding-right: 3.2rem;
 }
 
 /* ================================================
                         WORKS
 =================================================*/
 .works {
-  width: 100%;
-  margin-bottom: 128px;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .works-text {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto;
-  gap: 24px;
-  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+  margin-bottom: 3.2rem;
 }
 
 .works-text h2 {
-  font-size: 1.874rem;
-  margin-bottom: 8px;
+  font-size: 3.2rem;
+  margin-bottom: 0.8rem;
 }
 
 .works-text p {
-  width: 80%;
-  font-size: 1rem;
+  font-size: 1.8rem;
   line-height: 1.5;
 }
 
 .project-button {
-  width: 100%;
-  text-align: end;
+  margin-top: 2rem;
+  justify-self: end;
 }
 
-.projects {
+.project-images {
+  width: 130rem;
+  display: flex;
+  gap: 2.4rem;
+  width: 100%;
+}
+
+.project-images div {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 24px;
+  justify-content: space-between;
+  gap: 4.8rem;
+  margin: 0 auto;
 }
 
-.project-tag {
-  display: block;
-  width: 100%;
-  border-radius: 12px;
+.projects-slider {
+  position: relative;
+}
+
+.previous-icon,
+.next-icon {
+  color: #f76707;
+  font-size: 3.2rem;
+  position: absolute;
+  padding: 0.2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.previous-icon {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.next-icon {
+  left: 100%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.previous-icon:hover,
+.next-icon:hover {
+  cursor: pointer;
+  background-color: #f5f5f6;
 }
 
 /* ======================= STRATEGY ================= */
 .strategy {
   width: 100%;
-  margin-bottom: 128px;
+  margin: 9.6rem 0 9.6rem 0;
 }
 
 .strategy h2 {
-  margin-bottom: 16px;
-  font-size: 1.5rem;
+  font-size: 3.2rem;
+  margin-bottom: 6.4rem;
 }
 
 .services {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+}
+
+.service-image {
+  width: 100%;
 }
 
 .service-image img {
-  border-radius: 12px;
-  display: block;
-  max-width: 530px;
-  max-height: 380px;
-  width: auto;
-  height: auto;
+  width: 98%;
 }
 
 .services-icon {
-  stroke: #f76707;
-  width: 30px;
-  height: 30px;
+  color: #f76707;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 .service-detail {
   display: flex;
-  gap: 24px;
+  gap: 2.4rem;
+  margin-bottom: 1.6rem;
 }
 
 .service-detail h3 {
-  font-size: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
 }
 
 .service-detail p {
-  font-size: 0.875rem;
-  line-height: 1.7;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* ================= TESTIMONIAL ================== */
+.testimonials {
+  padding: 4.8rem 0 9.6rem 0;
+  width: 95rem;
+  margin: 0 auto;
+}
+
+.testimonials h3 {
+  font-size: 3.2rem;
+  margin-bottom: 5.2rem;
+  text-align: center;
+}
+
+.testimonial-details {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 9rem;
+  padding: 3.2rem;
+  border-radius: 0.8rem;
+  background-color: #410441;
+  padding-left: 9rem;
+  position: relative;
+}
+
+.testimonial-details img {
+  height: 20rem;
+  border-radius: 0.8rem;
+  transform: scale(1.5);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.25);
+}
+
+.testimonial-container {
+  font-size: 1.8rem;
+}
+
+.testimonial-text {
+  color: #e6ccec;
+  margin-bottom: 2.4rem;
+}
+
+.testimonial-author {
+  color: #da77f2;
+  font-size: 1.6rem;
+}
+
+.testimonial-job {
+  color: #da77f2;
+  font-size: 1.2rem;
+}
+
+.btn-testimonial {
+  padding: 1.4rem 1.6rem;
+  font-size: 1.4rem;
+}
+
+.testimonial-details .previous-icon {
+  left: 0;
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  gap: 1.2rem;
+  transition: all 0.4s;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #f76707;
+  cursor: pointer;
+}
+
+.dot:hover {
+  background-color: #f5f5f6;
+}
+
+.dot--fill {
+  background-color: #f76707;
+}
+
+/* ================= CONSULTAION =============== */
+.consultation {
+  padding: 4.8rem 0 9.6rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.consultation-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.consultation-text-large {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.consultation-text-small {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.btn-consultation {
+  width: 50%;
+}
+
+.consultation-image {
+  width: 100%;
+}
+
+.consultation-image img {
+  width: 95%;
 }
 
 /* =================================================
@@ -465,1021 +633,64 @@ SPACING-SYSTEM (px)
 ===================================================*/
 
 .footer {
-  width: 100%;
+  padding: 4.8rem 0 9.6rem 0;
   color: #fff;
   background-color: #410441;
-  margin: auto;
-  /* margin-top: 80px; */
   overflow: hidden;
 }
 
-/** Breakpoints:
-  sm: min-width: 640px;
-  md: min-width: 768px;
-  lg: min-width: 1024px;
-  xl: min-width: 1280px;
-  2xl: min-width: 1536px;
-**/
-
-/* 
-FONT-SIZE SPACING SYSTEM (px)
-10/ 12/ 14/ 16/ 18/ 20/ 24/ 30/ 36/ 44/ 52/ 62/ 74/ 86/ 98/ 
-
-SPACING-SYSTEM (px)
-2/ 4/ 8/ 12/ 16/ 24/ 32/ 48/ 64/ 80/ 96/ 128/
-*/
-
-/* ===================================================
-                        MEDIA QUERIES
-====================================================*/
-
-/* ==================== At 360px ================== */
-
-@media (min-width: 360px) {
-  .header {
-    padding: 10px;
-    margin-bottom: 0;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .logo img {
-    width: 55%;
-  }
-
-  /* Nav Icons */
-  .nav-icons {
-    align-items: flex-end;
-    gap: 10px;
-  }
-
-  .phone-number {
-    display: none;
-  }
-
-  .nav-icon {
-    width: 25px;
-  }
-
-  .nav-icon:hover {
-    cursor: pointer;
-  }
-
-  .hamburger {
-    padding: 5px 8px;
-  }
-
-  .hamburger:hover {
-    cursor: pointer;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-  }
-
-  .main {
-    margin-top: 64px;
-    width: 85%;
-  }
-
-  /* Hero Text */
-  .hero {
-    flex-wrap: wrap;
-    margin-bottom: 64px;
-  }
-
-  .hero-text h1 {
-    font-size: 1.5rem;
-    margin-bottom: 24px;
-  }
-
-  .hero-text p {
-    font-size: 1rem;
-  }
-
-  .hero-image {
-    width: 100%;
-    text-align: center;
-  }
-
-  .btn-hero {
-    width: 170px;
-    margin-bottom: 24px;
-  }
-
-  .hero a {
-    margin-top: 48px;
-    text-align: center;
-  }
-
-  .hero-image img {
-    width: 90%;
-  }
-
-  /* Card */
-  .card {
-    width: 100%;
-    margin-bottom: 96px;
-  }
-
-  .card h1 {
-    font-size: 1.5rem;
-    line-height: 1.2;
-    margin-bottom: 32px;
-  }
-
-  .card-item {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
-  }
-
-  .card-details {
-    margin: 16px;
-  }
-
-  /* Mission */
-  .mission {
-    flex-wrap: wrap;
-  }
-
-  .mission-image img {
-    width: 100%;
-    margin-bottom: 24px;
-  }
-
-  .mission-text {
-    width: 100%;
-  }
-
-  .mission-text h1 {
-    font-size: 1.5rem;
-  }
-
-  .mission-text p {
-    font-size: 0.875rem;
-  }
-
-  .video {
-    margin-top: 24px;
-  }
-
-  /* Counter */
-  .counter {
-    margin-bottom: 96px;
-  }
-
-  .counter {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-
-  .counter-icon {
-    width: 30%;
-  }
-
-  .num {
-    font-size: 2.5rem;
-  }
-
-  .text {
-    font-size: 0.875rem;
-    font-weight: normal;
-  }
-
-  /* Banner */
-  .banner {
-    margin-bottom: 96px;
-    flex-wrap: wrap;
-    gap: 96px;
-  }
-
-  .banner-text {
-    padding: 0;
-    line-height: 1.7;
-  }
-
-  .banner-text h2 {
-    font-size: 1.875rem;
-    line-height: 1.4;
-  }
-
-  .btn-banner {
-    width: 55%;
-    margin: auto;
-    margin-top: auto;
-    margin-top: 24px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    margin-bottom: 32px;
-  }
-
-  .banner-image {
-    padding: 0;
-    margin-top: 24px;
-  }
-
-  .banner-image img {
-    width: 100%;
-    padding: 0;
-  }
-
-  /* Works */
-  .works {
-    width: 100%;
-    margin-bottom: 96px;
-  }
-
-  .works-text {
-    flex-wrap: wrap;
-    width: 100%;
-    margin: auto;
-  }
-
-  .works-text h2 {
-    font-size: 1.5rem;
-  }
-
-  .works-text p {
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  .project-button {
-    padding: 24px;
-    text-align: center;
-  }
-
-  .projects {
-    margin-top: 32px;
-    margin-bottom: 24px;
-  }
-
-  .btn-project {
-    width: 55%;
-    margin: auto;
-    margin-top: 24px;
-    font-size: 0.75rem;
-    font-weight: 700;
-  }
-
-  /* Strategy */
-  .strategy {
-    width: 100%;
-    margin: auto;
-  }
-
-  .strategy h2 {
-    font-size: 1.5rem;
-    line-height: 1.4;
-  }
-
-  .services {
-    flex-wrap: wrap;
-  }
-
-  .service-detail {
-    margin-top: 24px;
-  }
-
-  .service-detail h3 {
-    margin-bottom: 4px;
-  }
-
-  .service-detail p {
-    font-size: 0.75rem;
-  }
-
-  .service-image {
-    width: 100%;
-    margin-top: 34px;
-  }
-
-  .service-image img {
-    width: 100%;
-  }
-
-  /* Testimonials */
-  .testimonials {
-    margin-top: 96px;
-    width: 100%;
-    color: #fff;
-    background-color: #410441;
-    margin-bottom: 96px;
-  }
-
-  .testimonials-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 48px;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .testimonials h3 {
-    font-size: 1rem;
-  }
-
-  .testimonials p {
-    font-size: 0.75rem;
-  }
-
-  .testimonials img {
-    width: 20%;
-    height: 50px;
-    border-radius: 50%;
-  }
-
-  .testimonials h4 {
-    color: #f76707;
-  }
-
-  .btn-testimonial {
-    width: 60%;
-    margin: auto;
-    padding: 10px 10px;
-    font-size: 0.75rem;
-    font-weight: 700;
-  }
-
-  /* IT Consultation */
-  .consultation {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 24px;
-    margin-bottom: 32px;
-  }
-
-  .consultation-image img {
-    width: 100%;
-    border-radius: 12px;
-  }
-  .consultation-text {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .btn-consultation {
-    width: 55%;
-    margin: auto;
-    margin-top: 24px;
-    font-size: 0.75rem;
-    font-weight: 700;
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-
-  .footer-logo-box {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer-logo {
-    border-radius: 50%;
-    width: 70px;
-    margin-bottom: 24px;
-  }
-
-  .first-footer-column,
-  .second-footer-column,
-  .third-footer-column,
-  .fourth-footer-column {
-    width: 80%;
-    margin: auto;
-  }
-
-  .first-footer-column h4,
-  .second-footer-column h4,
-  .third-footer-column h4,
-  .fourth-footer-column h4 {
-    color: #f026f0;
-    margin-bottom: 8px;
-  }
-
-  .first-footer-column p,
-  .second-footer-column p,
-  .third-footer-column p,
-  .fourth-footer-column p {
-    font-size: 12px;
-  }
-
-  .social-icon-container {
-    width: 100%;
-    color: #fff;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 12px;
-    margin: 12px 0;
-  }
-
-  .social-link {
-    display: inline-block;
-    padding: 12px;
-    margin: 12px 0;
-  }
-
-  .social-icon {
-    color: #fff;
-    padding: 12px;
-    font-size: 1.125rem;
-    border-radius: 50%;
-  }
-
-  .fa-twitter {
-    background-color: #1cb1d6;
-  }
-
-  .fa-facebook-f {
-    padding: 12px 16px;
-    background-color: #2f74dd;
-  }
-
-  .fa-instagram {
-    background-color: #640d64;
-  }
-
-  .fa-linkedin-in {
-    background-color: #2f74dd;
-  }
+.footer-logo {
+  margin-bottom: 2.4rem;
 }
 
-/* ==================== At 640px ================== */
-@media (min-width: 640px) {
-  .body-container {
-    width: 100vw;
-    margin: auto;
-  }
-
-  /* Header */
-  .header {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 96px;
-  }
-
-  .nav-icons {
-    gap: 32px;
-  }
-
-  .logo {
-    width: 20%;
-    margin-top: 12px;
-  }
-
-  /* Main */
-  .main {
-    width: 90%;
-  }
-
-  .hero {
-    gap: 24px;
-    margin: auto;
-    margin-bottom: 128px;
-  }
-
-  .hero-text {
-    width: 90%;
-    gap: 12px;
-    margin: auto;
-  }
-
-  .hero-text h1 {
-    font-size: 1.875rem;
-  }
-
-  .btn-hero {
-    width: 35%;
-    text-align: center;
-  }
-
-  .hero-image {
-    margin-top: 18px;
-  }
-
-  .btn-hero {
-    width: 180px;
-  }
-
-  /* Card */
-  .card {
-    margin-bottom: 128px;
-  }
-
-  .card h1 {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 32px;
-  }
-
-  .card-details {
-    flex-wrap: wrap;
-  }
-
-  /* Mission */
-  .mission {
-    margin-bottom: 128px;
-    gap: 32px;
-  }
-
-  .mission-text {
-    width: 80%;
-    margin: auto;
-  }
-
-  .mission-image {
-    width: 80%;
-    margin: auto;
-  }
-
-  /* Counter */
-  .counter {
-    margin-bottom: 128px;
-  }
-
-  .text {
-    font-weight: 700;
-  }
-
-  /* Banner */
-  .banner {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 128px;
-  }
-
-  .banner-text h2 {
-    line-height: 1.5;
-  }
-
-  .banner-image {
-    width: 100%;
-  }
-
-  /* Works */
-  .works {
-    margin-bottom: 128px;
-  }
-
-  .works-text {
-    width: 80%;
-  }
-
-  .projects {
-    width: 80%;
-    margin: auto;
-    gap: 48px;
-  }
-
-  .project-button {
-    margin-bottom: 12px;
-  }
-
-  /* Strategy */
-  .strategy {
-    /* width: 80%; */
-    margin: auto;
-    margin-bottom: 128px;
-  }
-
-  .service-image img {
-    margin: auto;
-  }
-
-  /* Testimonial */
-  .testimonials {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 128px;
-    border-radius: 5px;
-  }
-
-  .testimonials-details img {
-    height: 80px;
-  }
-
-  .btn-testimonial {
-    width: 150px;
-  }
-
-  /* Consultation */
-  .consultation-image {
-    width: 80%;
-  }
-
-  .btn-consultation {
-    width: 170px;
-    text-align: center;
-  }
-
-  /* Footer */
-
-  .first-footer-column,
-  .second-footer-column,
-  .third-footer-column,
-  .fourth-footer-column {
-    width: 60%;
-    margin: 0;
-  }
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.4rem;
 }
 
-/* ==================== At 768px ================== */
-@media (min-width: 768px) {
-  /* Header */
-
-  .logo {
-    width: 0;
-  }
-
-  .logo img {
-    width: 70px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.75rem;
-    padding-left: 70px;
-  }
-
-  .nav-link:hover {
-    font-size: 1rem;
-    cursor: pointer;
-  }
-
-  .nav-icons {
-    gap: 12px;
-  }
-
-  /* Main */
-  .main {
-  }
-
-  .hero {
-    flex-wrap: nowrap;
-    gap: 32px;
-  }
-
-  .btn:link,
-  .btn:visited {
-    color: #fff;
-    text-decoration: none;
-    background-color: #f76707;
-    border-radius: 100px;
-    font-size: 0.875rem;
-    font-weight: 400;
-  }
-
-  .btn:hover,
-  .btn:active {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    font-weight: 600;
-  }
-
-  .hero-image {
-    margin-top: 4px;
-  }
-
-  .hero-image img {
-    width: 100%;
-  }
-
-  /* Card */
-  .card h1 {
-    width: 55%;
-    margin-left: 0;
-    line-height: 1.5;
-  }
-
-  .card-item {
-    gap: 32px;
-  }
-
-  /* Counter */
-  .text {
-    font-weight: 700;
-  }
-
-  /* Banner */
-  .banner {
-    width: 100%;
-    flex-wrap: nowrap;
-    gap: 24px;
-  }
-
-  .banner-text h2 {
-    line-height: 1.3;
-  }
-
-  .banner-image {
-    width: 100%;
-  }
-
-  .btn-banner {
-    margin-top: 0;
-  }
-
-  /* Project */
-  .project-button {
-    padding-left: 0;
-    text-align: left;
-  }
-
-  /* Testimonial */
-  .testimonials-details h3 {
-    font-size: 1.5rem;
-  }
-
-  .testimonials-details img {
-    width: 75px;
-    height: 70px;
-  }
-
-  .btn-testimonial {
-    width: 200px;
-  }
-
-  /* Consultaion */
-  .btn-consultation {
-    width: 200px;
-  }
-
-  /* Footer */
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    align-items: flex-start;
-    justify-content: center;
-  }
-
-  .footer-logo-box {
-    display: inline-block;
-  }
-
-  .footer-logo {
-    margin-bottom: 8px;
-  }
-
-  .social-icon-container {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    gap: 0;
-  }
-
-  .social-link {
-    padding: 5px;
-  }
-
-  .first-footer-column,
-  .second-footer-column,
-  .third-footer-column,
-  .fourth-footer-column {
-    width: 75%;
-    padding: 32px;
-    margin-top: 80px;
-    margin: auto;
-  }
-
-  .first-footer-column {
-    margin-top: 128px;
-  }
-
-  .first-footer-column p {
-    line-height: 2;
-  }
-
-  .second-footer-column p {
-    line-height: 2;
-  }
-
-  .third-footer-column {
-    padding-top: 24px;
-    margin-top: 8px;
-  }
-
-  .third-footer-column p {
-    line-height: 2;
-  }
-
-  .fourth-footer-column > div {
-    line-height: 2;
-  }
+.first-footer-column {
+  padding-left: 9.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 4.8rem;
 }
 
-/* ==================== At 1024px ================== */
-@media (min-width: 1024px) {
-  /* Header */
-  .header {
-    width: 95%;
-    gap: 16px;
-  }
-
-  .nav {
-    font-size: 1rem;
-    margin: auto;
-  }
-
-  .nav-link:hover {
-    font-size: 1.125rem;
-    border-bottom: 2px solid #f76707;
-  }
-
-  .nav-icons {
-    /* width: 50px; */
-    gap: 16px;
-  }
-
-  .nav-icons > div {
-    width: 100%;
-    display: flex;
-  }
-
-  .phone-number {
-    display: flex;
-  }
-
-  /* Main */
-  .main {
-    width: 80%;
-    margin: auto;
-  }
-
-  .hero-text h1 {
-    font-size: 2.5rem;
-    line-height: 1.4;
-  }
-
-  /* .hero-image img {
-    width: 100%;
-  } */
-
-  /* BTN */
-  .btn:link,
-  .btn:visited {
-    color: #fff;
-    text-decoration: none;
-    background-color: #f76707;
-    border-radius: 100px;
-  }
-
-  .btn:hover,
-  .btn:active {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    font-weight: 600;
-  }
-
-  .btn-primary {
-    width: 200px;
-    font-size: 1.5rem;
-    padding: 16px 32px;
-    align-self: flex-end;
-  }
-
-  /* Card */
-
-  .card h1 {
-    width: 100%;
-    font-size: 2rem;
-  }
-
-  .card-item {
-    width: 100%;
-    flex-wrap: nowrap;
-  }
-
-  /* Mission */
-  .mission {
-    flex-wrap: nowrap;
-    gap: 24px;
-  }
-
-  .mission-text {
-    gap: 12px;
-  }
-
-  .mission-text h1 {
-    font-size: 2rem;
-  }
-
-  .mission-text .mission-text-medium {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  .mission-image img {
-    width: 100%;
-    align-self: flex-start;
-  }
-
-  .mission-text p {
-    font-size: 0.875rem;
-  }
-
-  /* Project Counter */
-  .counter {
-    display: flex;
-  }
-
-  /* Banner */
-  .banner-text h2 {
-    font-size: 2rem;
-    line-height: 1.5;
-  }
-
-  /* Works */
-  .works-text {
-    width: 100%;
-  }
-
-  .works-text h2 {
-    font-size: 2rem;
-  }
-
-  .works-text p {
-    width: 70%;
-  }
-
-  .projects {
-    width: 100%;
-    flex-wrap: nowrap;
-    gap: 24px;
-  }
-
-  .project-tag img {
-    width: 100%;
-  }
-
-  .project-button {
-    margin-bottom: 24px;
-  }
-
-  .btn:active
-
-  /* Strategy */
-.strategy {
-    width: 100%;
-  }
-  .services {
-    flex-wrap: nowrap;
-    gap: 24px;
-  }
-
-  .service-detail {
-    gap: 12px;
-  }
-
-  /* Testimonial */
-  .btn-testimonial {
-    width: 220px;
-  }
-
-  /* Consultation */
-  .consultation {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  .consultation-text h4 {
-    font-size: 1.5rem;
-  }
-
-  /* Footer */
-  .first-footer-column {
-    padding-top: 0;
-    margin-top: 80px;
-  }
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+  color: #da77f2;
 }
 
-/* ==================== At 1280px ================== */
-/* Header */
+.first-footer-column,
+.second-footer-column,
+.third-footer-column,
+.fourth-footer-column {
+  margin-top: 3.2rem;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
 
-/* Main */
+.third-footer-column p:hover,
+.fourth-footer-column p:hover {
+  color: #da77f2;
+  cursor: pointer;
+}
 
-/* Footer */
+.social-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  font-size: 2.4rem;
+}
+
+.social-link:link,
+.social-link:visited {
+  color: #da77f2;
+}

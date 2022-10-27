@@ -1,0 +1,392 @@
+/** Breakpoints:
+  sm: min-width: 640px;
+  md: min-width: 768px;
+  lg: min-width: 1024px;
+  xl: min-width: 1280px;
+  2xl: min-width: 1536px;
+**/
+
+/* 
+FONT-SIZE SPACING SYSTEM (px)
+10/ 12/ 14/ 16/ 18/ 20/ 24/ 30/ 36/ 44/ 52/ 62/ 74/ 86/ 98/ 
+
+SPACING-SYSTEM (px)
+2/ 4/ 8/ 12/ 16/ 24/ 32/ 48/ 64/ 80/ 96/ 128/
+*/
+
+/* ===================================================
+                        MEDIA QUERIES
+====================================================*/
+
+/* ==================== At 1536px ================== */
+/* @media (max-width: 96em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 95em) {
+  .nav-link:link,
+  .nav-link:visited {
+    font-weight: 500;
+  }
+
+  .main {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 94em) {
+  .nav-items {
+    gap: 3.2rem;
+  }
+} */
+
+/* ==================== At 1280px ================== */
+@media (max-width: 80em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-weight: normal;
+  }
+}
+
+/* ==================== At 1024px ================== */
+@media (max-width: 64em) {
+  .nav-items {
+    gap: 2.6rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 1.63rem;
+    font-weight: normal;
+  }
+
+  .main {
+    max-width: 95%;
+  }
+
+  .hero-text h1 {
+    font-size: 4.4rem;
+  }
+
+  .hero-text p {
+    font-size: 1.8rem;
+  }
+
+  .card-item {
+    width: 100%;
+    gap: 2.4rem;
+  }
+
+  .banner h2 {
+    font-size: 4rem;
+  }
+
+  .project-tag {
+    width: 45%;
+  }
+}
+/* ==================== At 768px Tablet ================== */
+@media (max-width: 48em) {
+  html {
+    font-size: 48%;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .main {
+    max-width: 85%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+  }
+
+  .hero-image {
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 90%;
+  }
+
+  .card-item {
+    flex-wrap: wrap;
+    gap: 4.8rem;
+  }
+
+  .mission {
+    grid-template-columns: 1fr;
+  }
+
+  .counter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .banner {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 9.6rem;
+  }
+
+  .banner-text h2 {
+    font-size: 4.4rem;
+    margin-bottom: 5.2rem;
+  }
+
+  .banner-image img {
+    width: 98%;
+  }
+
+  .works-text {
+    grid-template-columns: 1fr;
+    margin-bottom: 6.4rem;
+  }
+
+  .project-button {
+    justify-self: center;
+  }
+
+  .project-images div {
+    flex-direction: column;
+  }
+
+  .project-tag {
+    width: 100%;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .service-image {
+    text-align: center;
+  }
+
+  .service-image img {
+    /* width: 65%; */
+    text-align: center;
+  }
+
+  .service-image img,
+  .consultation-image img {
+    width: 90%;
+  }
+
+  .testimonials {
+    width: 80%;
+  }
+
+  .testimonial-details {
+    flex-direction: column;
+    padding-left: 3.2rem;
+  }
+
+  .testimonial-text,
+  .testimonial-author,
+  .testimonial-job {
+    width: 100%;
+    text-align: center;
+  }
+
+  .consultation {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+  }
+
+  .consultation-text {
+    margin: 0 auto;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .btn-consultation {
+    margin: 0 auto;
+  }
+
+  .consultation-image {
+    padding: 2.4rem;
+    text-align: center;
+  }
+
+  .consultation-image img {
+    width: 90%;
+  }
+
+  .footer {
+    padding-top: 0;
+    overflow: hidden;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    gap: 4.8rem;
+  }
+
+  .footer-logo-box {
+    width: 100%;
+  }
+
+  .footer-logo {
+    margin-bottom: 0;
+  }
+
+  .footer-heading {
+    font-size: 2.4rem !important;
+  }
+
+  .first-footer-column {
+    padding-left: 16rem;
+    margin-bottom: 8rem;
+    gap: 3.2rem;
+    margin-top: 12rem;
+  }
+
+  .first-footer-column p {
+    font-size: 1.8rem;
+  }
+
+  .second-footer-column {
+    width: 60%;
+    padding-left: 1.9rem;
+    margin-top: 4.8rem;
+  }
+
+  .fourth-footer-column h6 {
+    font-size: 1.6rem;
+  }
+
+  .first-footer-column p,
+  .second-footer-column p,
+  .third-footer-column p,
+  .fourth-footer-column p {
+    font-size: 1.6rem;
+  }
+}
+/* ==================== At 425px ================== */
+@media (max-width: 27em) {
+  html {
+    font-size: 44%;
+  }
+
+  .main {
+    max-width: 80%;
+  }
+
+  /* .hero {
+    grid-template-columns: 1fr;
+    gap: 9.6rem;
+  } */
+
+  /* .hero-image {
+    width: 100%;
+    text-align: center;
+  } */
+
+  /* .hero-image img {
+    width: 90%;
+  } */
+
+  /* .mission {
+    grid-template-columns: 1fr;
+  } */
+
+  /* .counter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.8rem;
+  } */
+
+  /* .banner {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 9.6rem;
+  } */
+
+  /* .banner-text h2 {
+    font-size: 4.4rem;
+  } */
+
+  .works {
+    padding: 4.8rem 0 0;
+  }
+
+  .works-text {
+    grid-template-columns: 1fr;
+    margin-bottom: 6.4rem;
+  }
+
+  .project-button {
+    justify-self: center;
+  }
+
+  .project-images div {
+    flex-direction: column;
+  }
+
+  .project-tag {
+    width: 100%;
+  }
+
+  .strategy {
+    padding: 4.8rem 0 0;
+  }
+
+  .service-image img,
+  .consultation-image img {
+    width: 90%;
+  }
+
+  .testimonials {
+    width: 80%;
+  }
+
+  .testimonial-details {
+    flex-direction: column;
+    padding-left: 3.2rem;
+  }
+
+  .testimonial-text,
+  .testimonial-author,
+  .testimonial-job {
+    width: 100%;
+    text-align: center;
+  }
+
+  .consultation-text-large {
+    font-size: 3.2rem;
+  }
+
+  .btn-consultation {
+    width: 70%;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .first-footer-column {
+    padding-left: 6.4rem;
+  }
+
+  .second-footer-column {
+    padding-left: 0;
+  }
+
+  .footer-heading {
+    font-size: 2.4rem;
+  }
+}
+/* ==================== At 375px ================== */
+
+/* Header */ /* Main */ /* Footer */

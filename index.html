@@ -8,6 +8,14 @@
       name="description"
       content="We are dedicated web development agency based in Ikeja Lagos, Nigeria."
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <title>Creative Mansion | Web Development Agency</title>
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Poppins:wght@400;700;900&display=swap"
@@ -21,6 +29,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
   </head>
   <body>
     <!--==============================================================================
@@ -29,7 +38,9 @@
     <header class="header">
       <!-- Creative Mansion Logo -->
       <div class="logo">
-        <img src="images/cm-logo.jpg" alt="Creative Mansion Logo image" />
+        <a href="#">
+          <img src="images/cm-logo1.png" alt="Creative Mansion Logo image" />
+        </a>
       </div>
 
       <!-- Navigation -->
@@ -45,22 +56,8 @@
       </nav>
       <div class="nav-icons">
         <!-- phone icon -->
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            class="nav-icon"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-            />
-          </svg>
+        <div class="phone">
+          <ion-icon class="phone-icon" name="call-outline"></ion-icon>
           <span class="phone-number">+234000000000</span>
         </div>
         <!-- Search Icon -->
@@ -112,6 +109,7 @@
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
             totam temporibus voluptatum ut deserunt ex dolorem officiis suscipit
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           </p>
 
           <a class="btn btn-primary btn-hero" href="#"
@@ -120,7 +118,7 @@
         </div>
 
         <div class="hero-image">
-          <img src="images/hero--image.jpg" alt="" />
+          <img src="images/cm-hero.png" alt="" />
         </div>
       </section>
 
@@ -130,21 +128,7 @@
         <div class="card-item">
           <div class="card-details">
             <span
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                class="card-icon"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"
-                />
-              </svg>
+              ><ion-icon class="card-icon" name="terminal-outline"></ion-icon>
             </span>
             <div>
               <h3>Web Development</h3>
@@ -158,21 +142,7 @@
           </div>
           <div class="card-details">
             <span
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                class="card-icon"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-                />
-              </svg>
+              ><ion-icon class="card-icon" name="cart-outline"></ion-icon>
             </span>
             <div>
               <h3>eCommerce Manager</h3>
@@ -186,21 +156,7 @@
           </div>
           <div class="card-details">
             <span
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                class="card-icon"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.098 19.902a3.75 3.75 0 005.304 0l6.401-6.402M6.75 21A3.75 3.75 0 013 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 003.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008z"
-                />
-              </svg>
+              ><ion-icon class="card-icon" name="business-outline"></ion-icon>
             </span>
             <div>
               <h3>Business Branding</h3>
@@ -214,21 +170,7 @@
           </div>
           <div class="card-details">
             <span
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                class="card-icon"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
-                />
-              </svg>
+              ><ion-icon class="card-icon" name="people-outline"></ion-icon>
             </span>
             <div>
               <h3>Social Media Marketing</h3>
@@ -246,7 +188,7 @@
       <!-- ========================== MISSION ============================= -->
       <section class="mission">
         <div class="mission-image">
-          <img src="images/hero--image5.jpg" alt="" />
+          <img src="images/mission-image.png" alt="" />
         </div>
         <div class="mission-text">
           <h1>We are on a mission to change your view on Digital Services</h1>
@@ -377,7 +319,7 @@
           >
         </div>
         <div class="banner-image">
-          <img src="images/hero--image2.jpg" alt="A man coding on a laptop" />
+          <img src="images/banner-image.png" alt="A man coding on a laptop" />
         </div>
       </section>
 
@@ -397,27 +339,48 @@
             >
           </div>
         </div>
-        <div class="projects">
-          <img
-            class="project-tag"
-            src="images/hero--image1.jpg"
-            alt="Projects"
-          />
-          <img
-            class="project-tag"
-            src="images/hero--image.jpg"
-            alt="Projects"
-          />
-          <img
-            class="project-tag"
-            src="images/hero--image5.jpg"
-            alt="Projects"
-          />
-          <img
-            class="project-tag"
-            src="images/hero--image1.jpg"
-            alt="Projects"
-          />
+        <div class="projects-slider">
+          <ion-icon class="previous-icon" name="arrow-back-outline"></ion-icon>
+          <div class="project-images">
+            <div>
+              <img
+                class="project-tag"
+                src="images/project-image-removebg-preview.png"
+                alt="Projects"
+              />
+              <img
+                class="project-tag"
+                src="images/project-image1-removebg-preview.png"
+                alt="Projects"
+              />
+            </div>
+
+            <!-- <div>
+              <img
+                class="project-tag"
+                src="images/project-image2.png"
+                alt="Projects"
+              />
+              <img
+                class="project-tag"
+                src="images/project-image3-removebg-preview.png"
+                alt="Projects"
+              />
+            </div>
+            <div>
+              <img
+                class="project-tag"
+                src="images/project-image4-removebg-preview.png"
+                alt="Projects"
+              />
+              <img
+                class="project-tag"
+                src="images/project-image5-removebg-preview.png"
+                alt="Projects"
+              />
+            </div> -->
+          </div>
+          <ion-icon class="next-icon" name="arrow-forward-outline"></ion-icon>
         </div>
       </section>
 
@@ -428,21 +391,10 @@
           <div class="services-items">
             <div class="service-detail">
               <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
+                <ion-icon
                   class="services-icon"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
+                  name="checkmark-circle-outline"
+                ></ion-icon>
               </div>
 
               <div>
@@ -456,21 +408,10 @@
             </div>
             <div class="service-detail">
               <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
+                <ion-icon
                   class="services-icon"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
+                  name="checkmark-circle-outline"
+                ></ion-icon>
               </div>
               <div>
                 <h3>eCommerce Website Design</h3>
@@ -483,21 +424,10 @@
             </div>
             <div class="service-detail">
               <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
+                <ion-icon
                   class="services-icon"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
+                  name="checkmark-circle-outline"
+                ></ion-icon>
               </div>
               <div>
                 <h3>Social Media Marketing</h3>
@@ -510,21 +440,10 @@
             </div>
             <div class="service-detail">
               <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
+                <ion-icon
                   class="services-icon"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
+                  name="checkmark-circle-outline"
+                ></ion-icon>
               </div>
               <div>
                 <h3>Business Branding</h3>
@@ -538,7 +457,7 @@
           </div>
           <div class="service-image">
             <img
-              src="images/hero--image2.jpg"
+              src="images/strategy-image.png"
               alt="A man coding on his laptop"
             />
           </div>
@@ -547,39 +466,45 @@
 
       <!-- ============================= TESTIMONIALS ============================ -->
       <section class="testimonials">
-        <div class="testimonials-details">
-          <h3>What They say About Our Company</h3>
-          <img
-            src="images/hero--image1.jpg"
-            alt="Students coding on a laptop"
-          />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea beatae
-            odio voluptate! Impedit reiciendis similique velit quia magnam
-            quidem asperiores accusantium? Dignissimos molestiae odio dolor
-            expedita labore iure, harum quidem laudantium! Libero ducimus minus
-            quidem saepe iste excepturi, cumque veritatis.
-          </p>
-          <div class="title">
-            <h4>Carolina Adenuga</h4>
-            <p>Managing Director</p>
+        <h3>What They say About Our Company</h3>
+        <div class="testimonial-details">
+          <img src="images/maria.jpg" alt="Customer Image" />
+          <ion-icon class="previous-icon" name="arrow-back-outline"></ion-icon>
+          <blockquote class="testimonial-container">
+            <p class="testimonial-text">
+              <q
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                beatae odio voluptate! Impedit reiciendis similique velit quia
+                magnam quidem asperiores accusantium? molestiae odio</q
+              >
+            </p>
+
+            <p class="testimonial-author">Carolina Adenuga</p>
+            <p class="testimonial-job">Managing Director at ABSA Group</p>
+          </blockquote>
+          <ion-icon class="next-icon" name="arrow-forward-outline"></ion-icon>
+          <div class="dots">
+            <button class="dot dot--fill">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
           </div>
-          <a class="btn btn-primary btn-testimonial" href="#"
-            >Drop Review Here &rarr;</a
-          >
         </div>
       </section>
       <!-- ================== IT CONSULTATION ==================== -->
       <section class="consultation">
-        <div class="consultation-image">
-          <img src="images/hero--image2.jpg" alt="IT Consultant at work" />
-        </div>
         <div class="consultation-text">
-          <h4>Needs free consultation?</h4>
-          <h4>Contact Us Now!</h4>
+          <p class="consultation-text-large">Need free consultation ?</p>
+          <p class="consultation-text-small">Contact Us Now!</p>
           <a class="btn btn-primary btn-consultation" href="#"
             >Let's Get Started &rarr;</a
           >
+        </div>
+        <div class="consultation-image">
+          <img
+            src="images/consultation-image.png"
+            alt="IT Consultant at work"
+          />
         </div>
       </section>
     </main>
@@ -587,69 +512,71 @@
                                     FOOTER
     ================================================================================-->
     <footer class="footer">
-      <div class="first-footer-column">
-        <div class="footer-logo-box">
-          <img
-            class="footer-logo"
-            src="images/cm-logo.jpg"
-            alt="Creative Mansion Logo"
-          />
-        </div>
+      <div class="footer-container">
+        <div class="first-footer-column">
+          <div class="footer-logo-box">
+            <img
+              class="footer-logo"
+              src="images/cm-logo1.png"
+              alt="Creative Mansion Logo"
+            />
+          </div>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo
-          qui exercitationem quas dolorum culpa aliquid laboriosam iusto
-          possimus reiciendis?
-        </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            quo qui exercitationem quas dolorum culpa aliquid laboriosam iusto
+          </p>
 
-        <div class="social-icon-container">
-          <a class="social-link" href="#">
-            <i class="social-icon fa-brands fa-twitter"></i>
-          </a>
-          <a class="social-link" href="#">
-            <i class="social-icon fa-brands fa-facebook-f"></i>
-          </a>
-          <a class="social-link" href="#"
-            ><i class="social-icon fa-brands fa-instagram"></i
-          ></a>
-          <a class="social-link" href="#"
-            ><i class="social-icon fa-brands fa-linkedin-in"></i
-          ></a>
+          <div class="social-icon-container">
+            <a class="social-link" href="#">
+              <i class="social-icon fa-brands fa-twitter"></i>
+            </a>
+            <a class="social-link" href="#">
+              <i class="social-icon fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="social-link" href="#"
+              ><i class="social-icon fa-brands fa-instagram"></i
+            ></a>
+            <a class="social-link" href="#"
+              ><i class="social-icon fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
         </div>
-      </div>
-      <div class="second-footer-column">
-        <h4>Contacts</h4>
-        <p>
-          <strong>Address:</strong> 54 Abeokuta Street, Anifowoshe, Ikeja Lagos,
-          Nigeria.
-        </p>
-        <p><strong>Website:</strong> creativemansion.com.ng</p>
-        <p><strong>Email:</strong> info@creativemansion.com.ng</p>
-        <p><strong>Phone: +234700000000</strong></p>
-      </div>
-      <div class="third-footer-column">
-        <h4>Services</h4>
-        <p>Website Development</p>
-        <p>Business Branding</p>
-        <p>Digital Marketing</p>
-        <p>Digital Consultancy</p>
-        <p>Digital and ICT Training</p>
-      </div>
-      <div class="fourth-footer-column">
-        <h4>Recent Articles</h4>
-        <div>
-          <h6>Lorem ipsum dolor sit amet.</h6>
-          <p>Lorem, ipsum dolor.</p>
+        <div class="second-footer-column">
+          <p class="footer-heading">Contacts</p>
+          <p>
+            <strong>Address:</strong> 54 Abeokuta Street, Anifowoshe, Ikeja
+            Lagos, Nigeria.
+          </p>
+          <p><strong>Website:</strong> creativemansion.com.ng</p>
+          <p><strong>Email:</strong> info@creativemansion.com.ng</p>
+          <p><strong>Phone: +234700000000</strong></p>
         </div>
-        <div>
-          <h6>Lorem ipsum dolor sit amet.</h6>
-          <p>Lorem, ipsum dolor.</p>
+        <div class="third-footer-column">
+          <p class="footer-heading">Services</p>
+          <p>Website Development</p>
+          <p>Business Branding</p>
+          <p>Digital Marketing</p>
+          <p>Digital Consultancy</p>
+          <p>Digital and ICT Training</p>
         </div>
-        <div>
-          <h6>Lorem ipsum dolor sit amet.</h6>
-          <p>Lorem, ipsum dolor.</p>
+        <div class="fourth-footer-column">
+          <p class="footer-heading">Recent Articles</p>
+          <div>
+            <h6>Lorem ipsum dolor sit amet.</h6>
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+          <div>
+            <h6>Lorem ipsum dolor sit amet.</h6>
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+          <div>
+            <h6>Lorem ipsum dolor sit amet.</h6>
+            <p>Lorem, ipsum dolor.</p>
+          </div>
         </div>
       </div>
     </footer>
+    <!-- <script src="js/project-slider.js"></script> -->
   </body>
 </html>
