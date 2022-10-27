@@ -244,8 +244,7 @@ SPACING-SYSTEM (px)
     text-align: center;
   }
 
-  .service-image img,
-  .consultation-image img {
+  .service-image img {
     width: 100%;
   }
 
@@ -281,12 +280,11 @@ SPACING-SYSTEM (px)
   }
 
   .consultation-image {
-    padding: 2.4rem;
     text-align: center;
   }
 
   .consultation-image img {
-    width: 90%;
+    width: 100%;
   }
 
   .footer {
