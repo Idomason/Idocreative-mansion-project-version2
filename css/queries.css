@@ -120,6 +120,7 @@ SPACING-SYSTEM (px)
 
   .card-item {
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 4.8rem;
   }
 
@@ -281,6 +282,10 @@ SPACING-SYSTEM (px)
 
   .main {
     max-width: 80%;
+  }
+
+  .card-items {
+    justify-content: space-between;
   }
 
   /* .hero {
