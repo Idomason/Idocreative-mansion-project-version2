@@ -119,12 +119,12 @@ SPACING-SYSTEM (px)
   }
 
   .card-item {
-    padding: 0.5rem;
+    padding: 1.2rem;
     flex-wrap: wrap;
   }
 
   .card-details {
-    margin: 0.5rem;
+    margin: 1.2rem;
   }
 
   .mission {
