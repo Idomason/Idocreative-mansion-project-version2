@@ -311,25 +311,28 @@ SPACING-SYSTEM (px)
   }
 
   .first-footer-column {
-    /* padding-left: 16rem; */
-    margin-bottom: 8rem;
-    gap: 3.2rem;
+    margin-bottom: 6.4rem;
     margin-top: 12rem;
-    justify-content: space-between;
+    padding-left: 4.8rem;
   }
 
   .first-footer-column p {
     font-size: 1.8rem;
   }
 
-  .second-footer-column {
-    width: 60%;
-    padding-left: 1.9rem;
-    margin-top: 4.8rem;
-  }
-
   .fourth-footer-column h6 {
     font-size: 1.6rem;
+  }
+
+  .first-footer-column {
+    grid-column: span 1;
+  }
+
+  .second-footer-column {
+    grid-row: span 2;
+  }
+  .third-footer-column {
+    grid-row: span 2;
   }
 
   .first-footer-column p,
