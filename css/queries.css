@@ -236,8 +236,11 @@ SPACING-SYSTEM (px)
     text-align: center;
   }
 
+  .services-icon {
+    padding-right: 1.4rem;
+  }
+
   .service-image img {
-    /* width: 65%; */
     text-align: center;
   }
 
