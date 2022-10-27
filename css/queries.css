@@ -303,7 +303,13 @@ SPACING-SYSTEM (px)
   }
 
   .footer-logo {
-    margin-bottom: 0;
+    margin-bottom: 2.4rem;
+  }
+
+  .social-icon-container {
+    width: 40%;
+    margin-top: 2.4rem;
+    justify-content: space-between;
   }
 
   .footer-heading {
@@ -318,6 +324,7 @@ SPACING-SYSTEM (px)
     font-size: 1.6rem;
   }
 
+  .second-footer-column,
   .third-footer-column,
   .fourth-footer-column {
     justify-self: unset;
