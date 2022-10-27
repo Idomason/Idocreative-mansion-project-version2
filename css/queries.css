@@ -288,12 +288,12 @@ SPACING-SYSTEM (px)
   }
 
   .footer {
-    padding-top: 0;
+    padding: 4.8rem 0 9.6rem 0;
     overflow: hidden;
   }
 
   .footer-container {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr;
     justify-content: space-between;
     gap: 4.8rem;
   }
@@ -311,28 +311,17 @@ SPACING-SYSTEM (px)
   }
 
   .first-footer-column {
-    margin-bottom: 6.4rem;
-    margin-top: 12rem;
     padding-left: 4.8rem;
-  }
-
-  .first-footer-column p {
-    font-size: 1.8rem;
   }
 
   .fourth-footer-column h6 {
     font-size: 1.6rem;
   }
 
-  .first-footer-column {
-    grid-column: span 1;
-  }
-
-  .second-footer-column {
-    grid-row: span 2;
-  }
-  .third-footer-column {
-    grid-row: span 2;
+  .third-footer-column,
+  .fourth-footer-column {
+    justify-self: unset;
+    padding-left: 5.2rem;
   }
 
   .first-footer-column p,
@@ -340,6 +329,11 @@ SPACING-SYSTEM (px)
   .third-footer-column p,
   .fourth-footer-column p {
     font-size: 1.6rem;
+  }
+
+  .first-footer-column p {
+    font-size: 1.8rem;
+    line-height: 1.7;
   }
 }
 /* ==================== At 425px ================== */
