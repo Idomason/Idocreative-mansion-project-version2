@@ -336,12 +336,11 @@ SPACING-SYSTEM (px)
   .third-footer-column p,
   .fourth-footer-column p {
     font-size: 1.6rem;
-    line-height: 1.7;
+    line-height: 2;
   }
 
   .first-footer-column p {
     font-size: 1.8rem;
-    line-height: 2;
   }
 }
 /* ==================== At 425px ================== */
