@@ -114,6 +114,7 @@ SPACING-SYSTEM (px)
   }
 
   .phone-number {
+    display: none;
     font-size: 1.8rem;
   }
 
