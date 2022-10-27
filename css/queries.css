@@ -119,12 +119,7 @@ SPACING-SYSTEM (px)
   }
 
   .card-item {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /* margin-bottom: 2.4rem; */
+    margin-bottom: 2.4rem;
     gap: 4.8rem;
   }
 
@@ -289,11 +284,7 @@ SPACING-SYSTEM (px)
   }
 
   .card-items {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* margin-bottom: 2.4rem; */
+    margin-bottom: 2.4rem;
   }
 
   /* .hero {
