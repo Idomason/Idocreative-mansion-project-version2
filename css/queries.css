@@ -97,6 +97,10 @@ SPACING-SYSTEM (px)
     font-size: 48%;
   }
 
+  .logo img {
+    width: 50%;
+  }
+
   .nav-items {
     display: none;
   }
