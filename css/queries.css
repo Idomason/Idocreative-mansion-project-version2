@@ -266,7 +266,7 @@ SPACING-SYSTEM (px)
 
   .consultation {
     grid-template-columns: 1fr;
-    gap: 8rem;
+    gap: 1.4rem;
   }
 
   .consultation-text {
