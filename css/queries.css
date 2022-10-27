@@ -403,7 +403,7 @@ SPACING-SYSTEM (px)
     width: 70%;
   }
 
-  .footer-container {
+  /* .footer-container {
     grid-template-columns: 1fr;
   }
 
@@ -417,7 +417,7 @@ SPACING-SYSTEM (px)
 
   .footer-heading {
     font-size: 2.4rem;
-  }
+  } */
 }
 /* ==================== At 375px ================== */
 
