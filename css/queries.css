@@ -254,7 +254,7 @@ SPACING-SYSTEM (px)
   .testimonial-details {
     flex-direction: column;
     padding-left: 3.2rem;
-    margin: 2.4rem;
+    margin: 1.4rem;
   }
 
   .testimonial-text,
