@@ -105,6 +105,11 @@ SPACING-SYSTEM (px)
     max-width: 85%;
   }
 
+  .phone-number {
+    font-weight: normal;
+    font-size: 1.8rem;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     gap: 6.4rem;
