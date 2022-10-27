@@ -106,7 +106,7 @@ SPACING-SYSTEM (px)
   }
 
   .nav-icons {
-    width: 80%;
+    width: 60%;
   }
 
   .main {
@@ -114,7 +114,6 @@ SPACING-SYSTEM (px)
   }
 
   .phone-number {
-    font-weight: normal;
     font-size: 1.8rem;
   }
 
