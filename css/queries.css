@@ -119,8 +119,12 @@ SPACING-SYSTEM (px)
   }
 
   .card-item {
+    padding: 0.5rem;
     flex-wrap: wrap;
-    row-gap: 4.8rem;
+  }
+
+  .card-details {
+    margin: 0.5rem;
   }
 
   .mission {
@@ -283,7 +287,7 @@ SPACING-SYSTEM (px)
     max-width: 80%;
   }
 
-  /* .card-items {
+  /* .card-item {
     flex-wrap: wrap;
   } */
 
