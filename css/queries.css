@@ -341,7 +341,7 @@ SPACING-SYSTEM (px)
 
   .first-footer-column p {
     font-size: 1.8rem;
-    line-height: 1.7;
+    line-height: 2;
   }
 }
 /* ==================== At 425px ================== */
