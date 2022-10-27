@@ -36,3 +36,14 @@ function updateImage() {
 }
 
 updateImage();
+
+// ==================  PHONE ===============
+const phoneIcon = document.querySelector('.phone-icon');
+const phoneNumber = document.querySelector('.phone-number');
+const navIcons = document.querySelector('.nav-icons');
+console.log('No');
+phoneIcon.addEventListener('click', function () {
+  console.log('clicked');
+  navIcons.style.width = '80%';
+  phoneNumber.classList.toggle('show-number');
+});

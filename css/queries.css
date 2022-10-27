@@ -118,6 +118,15 @@ SPACING-SYSTEM (px)
     font-size: 1.8rem;
   }
 
+  .phone-icon,
+  .nav-icon {
+    cursor: pointer;
+  }
+
+  .show-number {
+    display: block;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     gap: 6.4rem;
@@ -198,6 +207,10 @@ SPACING-SYSTEM (px)
     margin-bottom: 6.4rem;
   }
 
+  .works-text p {
+    font-size: 2rem;
+  }
+
   .project-button {
     justify-self: center;
   }
@@ -212,6 +225,11 @@ SPACING-SYSTEM (px)
 
   .services {
     grid-template-columns: 1fr;
+  }
+
+  .service-detail h3,
+  .service-detail p {
+    font-size: 2rem;
   }
 
   .service-image {
@@ -230,11 +248,13 @@ SPACING-SYSTEM (px)
 
   .testimonials {
     width: 80%;
+    padding: 1.4rem;
   }
 
   .testimonial-details {
     flex-direction: column;
     padding-left: 3.2rem;
+    margin: 2.4rem;
   }
 
   .testimonial-text,
