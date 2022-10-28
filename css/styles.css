@@ -25,6 +25,7 @@ html {
   /* font size: 16px by default */
   /* 10px / 16px = 6.25 * 100 = 62.5% */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -44,14 +45,19 @@ body {
 
 /* ==================================================
                         HEADER
-====================================================*/
+
+                        ====================================================*/
 
 .header {
+  padding: 2rem;
+}
+
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 4.8rem;
-  padding: 2rem;
+  transition: all 0.5s;
 }
 
 .logo img {
@@ -69,7 +75,6 @@ body {
 .nav-link:link,
 .nav-link:visited {
   text-decoration: none;
-  /* color: #343a40; */
   color: #11294d;
   font-size: 1.8rem;
   font-weight: bold;
@@ -88,6 +93,7 @@ body {
 .phone-icon {
   font-size: 3.2rem;
   color: #f76707;
+  cursor: pointer;
 }
 
 .phone-number {
@@ -104,9 +110,10 @@ body {
 }
 
 .nav-icon {
-  stroke: #f76707;
+  color: #f76707;
   width: 3.2rem;
   height: 3.2rem;
+  cursor: pointer;
 }
 
 .hamburger {
@@ -121,7 +128,108 @@ body {
 }
 
 .hamburger .nav-icon {
-  stroke: #fff;
+  color: #fff;
+}
+
+/* =============================================
+                JAVASCRIPT CLASSES
+================================================*/
+
+/* ============= NAVBAR 2 ============== */
+.navbar2 {
+  position: absolute;
+  right: -50rem;
+  width: 35rem;
+  right: 0;
+  height: 100%;
+  background-color: #410441;
+  transition: all 0.5s;
+  padding: 4.8rem;
+  display: none;
+  box-shadow: 0 0.4rem 1.2rem 0.6rem rgba(0, 0, 0, 0.2);
+}
+
+.navbar2 .logo,
+.navbar2 .nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.navbar2 .logo {
+  display: inline-block;
+  width: 15rem;
+  margin-bottom: 4.8rem;
+}
+
+.navbar2 .nav-items .nav-link:link,
+.navbar2 .nav-items .nav-link:visited {
+  color: #fff;
+  font-weight: normal;
+  padding: 1.4rem 1.6rem;
+  transition: all 0.5s;
+}
+
+.navbar2 .nav-items .nav-link:hover,
+.navbar2 .nav-items .nav-link:active {
+  color: #da77f2;
+  color: #f76707;
+  background-color: #680d68;
+  border-bottom: 1px solid #f76707;
+}
+
+.navbar2-socials {
+  margin-top: 4.8rem;
+  justify-content: center;
+}
+
+nav.sticky ul {
+  gap: 2.4rem;
+}
+
+nav.sticky {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 8%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.open-menu {
+  display: flex;
+  z-index: 200px;
+}
+
+.close-menu {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  transform: translate(-50%, 50%);
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f76707;
+  border-radius: 50%;
+  transition: all 0.3s ease-in;
+}
+
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
 }
 
 /* 
@@ -410,11 +518,15 @@ SPACING-SYSTEM (px)
   justify-self: end;
 }
 
-.project-images {
+.projects-slider {
+  position: relative;
   width: 130rem;
+}
+
+.project-images {
   display: flex;
   gap: 2.4rem;
-  width: 100%;
+  z-index: -100;
 }
 
 .project-images div {
@@ -425,10 +537,6 @@ SPACING-SYSTEM (px)
   margin: 0 auto;
 }
 
-.projects-slider {
-  position: relative;
-}
-
 .previous-icon,
 .next-icon {
   color: #f76707;
@@ -437,12 +545,14 @@ SPACING-SYSTEM (px)
   padding: 0.2rem;
   background-color: #fff;
   border-radius: 50%;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.2);
   transition: all 0.4s;
 }
 
 .previous-icon {
   top: 50%;
   transform: translate(-50%, -50%);
+  z-index: 100;
 }
 
 .next-icon {

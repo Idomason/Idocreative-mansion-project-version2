@@ -35,75 +35,77 @@
     <!--==============================================================================
                                     HEADER
     ================================================================================-->
-    <header class="header">
-      <!-- Creative Mansion Logo -->
-      <div class="logo">
-        <a href="#">
+    <header class="header" id="home">
+      <!-- Navigation -->
+      <nav class="navbar">
+        <!-- Creative Mansion Logo -->
+        <a class="logo" href="#home">
           <img src="images/cm-logo1.png" alt="Creative Mansion Logo image" />
         </a>
-      </div>
-
-      <!-- Navigation -->
-      <nav class="nav">
         <ul class="nav-items">
-          <li><a href="" class="nav-link">Home</a></li>
-          <li><a href="" class="nav-link">About Us</a></li>
-          <li><a href="" class="nav-link">Services</a></li>
-          <li><a href="" class="nav-link">Academy</a></li>
-          <li><a href="" class="nav-link">Blog</a></li>
-          <li><a href="" class="nav-link">Contact Us</a></li>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#academy" class="nav-link">Academy</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
         </ul>
+        <div class="nav-icons">
+          <!-- phone icon -->
+          <div class="phone">
+            <ion-icon class="phone-icon" name="call-outline"></ion-icon>
+            <span class="phone-number">+234000000000</span>
+          </div>
+          <!-- Search Icon -->
+          <div>
+            <ion-icon class="nav-icon" name="search-outline"></ion-icon>
+          </div>
+          <!-- Hamburger Menu -->
+          <div class="hamburger open-menu">
+            <ion-icon class="nav-icon" name="apps-outline"></ion-icon>
+          </div>
+        </div>
       </nav>
-      <div class="nav-icons">
-        <!-- phone icon -->
-        <div class="phone">
-          <ion-icon class="phone-icon" name="call-outline"></ion-icon>
-          <span class="phone-number">+234000000000</span>
+
+      <!-- ================== NAVBAR 2 ================ -->
+      <nav class="navbar2">
+        <!-- Creative Mansion Logo -->
+        <a class="logo" href="#home">
+          <img src="images/cm-logo1.png" alt="Creative Mansion Logo image" />
+        </a>
+        <ul class="nav-items">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#academy" class="nav-link">Academy</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+          <div class="close-menu">
+            <ion-icon class="nav-icon" name="close-outline"></ion-icon>
+          </div>
+        </ul>
+        <div class="social-icon-container navbar2-socials">
+          <a class="social-link" href="#">
+            <i class="social-icon fa-brands fa-twitter"></i>
+          </a>
+          <a class="social-link" href="#">
+            <i class="social-icon fa-brands fa-facebook-f"></i>
+          </a>
+          <a class="social-link" href="#"
+            ><i class="social-icon fa-brands fa-instagram"></i
+          ></a>
+          <a class="social-link" href="#"
+            ><i class="social-icon fa-brands fa-linkedin-in"></i
+          ></a>
         </div>
-        <!-- Search Icon -->
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            class="nav-icon"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-            />
-          </svg>
-        </div>
-        <!-- Hamburger Menu -->
-        <div class="hamburger">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            class="nav-icon"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
-        </div>
-      </div>
+      </nav>
     </header>
 
     <!--==============================================================================
                                     MAIN
     ================================================================================-->
     <main class="main">
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="hero-text">
           <h1>Original, Expressive and Innovative</h1>
           <p>
@@ -186,7 +188,7 @@
       </section>
 
       <!-- ========================== MISSION ============================= -->
-      <section class="mission">
+      <section class="mission" id="about">
         <div class="mission-image">
           <img src="images/mission-image.png" alt="" />
         </div>
@@ -355,7 +357,7 @@
               />
             </div>
 
-            <!-- <div>
+            <div>
               <img
                 class="project-tag"
                 src="images/project-image2.png"
@@ -378,14 +380,14 @@
                 src="images/project-image5-removebg-preview.png"
                 alt="Projects"
               />
-            </div> -->
+            </div>
           </div>
           <ion-icon class="next-icon" name="arrow-forward-outline"></ion-icon>
         </div>
       </section>
 
       <!-- ========================= STRATEGY SECTION ==================-->
-      <section class="strategy">
+      <section class="strategy" id="services">
         <h2>Expert in Web Development and Digital Services</h2>
         <div class="services">
           <div class="services-items">
@@ -578,6 +580,6 @@
       </div>
     </footer>
 
-    <!-- <script src="js/project-slider.js"></script> -->
+    <script src="js/project-slider.js"></script>
   </body>
 </html>
