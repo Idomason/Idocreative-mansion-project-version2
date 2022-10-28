@@ -45,8 +45,7 @@ body {
 
 /* ==================================================
                         HEADER
-
-                        ====================================================*/
+====================================================*/
 
 .header {
   padding: 2rem;
@@ -520,10 +519,10 @@ SPACING-SYSTEM (px)
 
 .projects-slider {
   position: relative;
-  width: 130rem;
 }
 
 .project-images {
+  width: 130rem;
   display: flex;
   gap: 2.4rem;
   z-index: -100;
