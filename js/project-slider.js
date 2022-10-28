@@ -54,7 +54,7 @@ phoneIcon.addEventListener('click', function () {
 
 window.addEventListener('scroll', function () {
   navbar.classList.toggle('sticky', window.scrollY > 0);
-  menuItems2.classList.add('close');
+  // menuItems2.classList.add('close');
 });
 
 // ================  HAMBURGER ================
