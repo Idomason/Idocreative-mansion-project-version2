@@ -351,7 +351,7 @@ SPACING-SYSTEM (px)
 
   .navbar2 .nav-items .nav-link:link,
   .navbar2 .nav-items .nav-link:visited {
-    margin: 4.8rem;
+    margin-bottom: 4.8rem;
   }
 
   .navbar2-socials {
