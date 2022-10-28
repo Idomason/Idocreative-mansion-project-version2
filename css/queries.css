@@ -342,6 +342,18 @@ SPACING-SYSTEM (px)
   .first-footer-column p {
     font-size: 1.8rem;
   }
+
+  /* ==================NAVBAR 2 ============ */
+  .navbar2 .nav-items {
+    gap: 4.8rem;
+  }
+
+  .navbar2-socials {
+    margin: 0 auto;
+    margin-top: 4.8rem;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 /* ==================== At 425px ================== */
 @media (max-width: 27em) {
