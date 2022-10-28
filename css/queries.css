@@ -344,9 +344,9 @@ SPACING-SYSTEM (px)
   }
 
   /* ==================NAVBAR 2 ============ */
-  .navbar2 .nav-items {
-    padding: 1.6rem;
-    margin: 4.8rem;
+  .navbar2 .nav-items .nav-link:link,
+  .navbar2 .nav-items .nav-link:visited {
+    margin-bottom: 4.8rem;
   }
 
   .navbar2-socials {
