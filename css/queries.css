@@ -344,14 +344,9 @@ SPACING-SYSTEM (px)
   }
 
   /* ==================NAVBAR 2 ============ */
-  .navbar2 {
-    width: 100%;
-  }
 
   .navbar2 .nav-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    gap: 300px;
   }
 
   .navbar2-socials {
