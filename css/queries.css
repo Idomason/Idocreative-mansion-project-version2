@@ -345,10 +345,11 @@ SPACING-SYSTEM (px)
 
   /* ==================NAVBAR 2 ============ */
   .navbar2 .nav-items {
-    gap: 4.8rem;
+    gap: 6.4rem;
   }
 
   .navbar2-socials {
+    width: 50%;
     margin: 0 auto;
     margin-top: 4.8rem;
     align-items: center;
