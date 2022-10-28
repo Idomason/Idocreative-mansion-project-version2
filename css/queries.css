@@ -344,9 +344,14 @@ SPACING-SYSTEM (px)
   }
 
   /* ==================NAVBAR 2 ============ */
-  .navbar2 .nav-items .nav-link:link,
-  .navbar2 .nav-items .nav-link:visited {
-    margin-bottom: 9.6rem;
+  .navbar2 {
+    width: 100%;
+  }
+
+  .navbar2 .nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .navbar2-socials {
